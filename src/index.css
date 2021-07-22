@@ -1,13 +1,272 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
+body{
+margin: 0;
+box-sizing: border-box;
+height: 100vh; 
+background-color: rgb(237, 221, 200);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2{
+    font-size: larger;
+    color: blue;
+    text-align: center;
+    justify-content: center;
+    margin: 80px 0 20px 50px;
+    font-family: 'Lobster',cursive;
+    font-size: 1.5rem;
 }
+
+.title-container{
+    text-align: center;
+    justify-content: center;
+   
+}
+/* .section-container{
+text-align: center;
+} */
+
+article{
+ background-color: burlywood;
+ width: 500px;
+ margin-left: 35%;
+ margin-right: 35%;
+ height: 500px;
+ box-shadow: 20px 20px 50px rgb(235, 189, 125);
+ 
+}
+
+.image-container{
+    justify-content: center;
+    text-align: center;
+    position:relative;
+    display:flex;
+   }
+
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+   border: 3px transparent rgb(239, 239, 244);
+   border-right-style: solid;
+   border-right-color: blue;
+}
+
+.quote-icon{
+    position: absolute;
+    margin-right: 200px;
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: rgb(105, 105, 203);
+}
+
+.author{
+font-size: 3rem;
+color: blue;
+text-align: center;
+justify-content: center;
+margin: 0;
+position: relative ;
+font-family: 'Dancing Script',
+cursive;
+}
+
+.job{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+    font-family: 'Lobster',
+    cursive;
+    text-align: center;
+}
+
+.text{
+padding-left: 30px;
+padding-right: 30px;
+ font-family: 'Pacifico',
+ cursive;
+  
+}
+
+.btn-container{
+    margin: 10px 50px;
+    text-align: center;
+}
+
+.prev-btn{
+    margin: 0 4px;
+    border: none;
+    padding: 3;
+    color:rgb(105, 105, 203);
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.next-btn{
+    margin: 0 4px;
+    border: none;
+    padding: 3;
+    color:rgb(105, 105, 203);
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.random-container{
+    text-align: center;
+    justify-content: center;
+}
+
+.random-btn{
+       margin: 0;
+       border: blue;
+       color:rgb(105, 105, 203);
+       background-color: rgb(165, 165, 216);
+       color: black;
+       padding: 10px 24px;
+       border-radius: 12px;
+         transition-duration: 0.4s;
+         font-family: 'Dancing Script', cursive;
+         text-align: center;
+}
+
+.random-btn:hover{
+    background-color:rgb(105, 105, 203);
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+.section-container{
+    margin-right: 200px;
+}
+}
+
+@media screen and (min-width: 450px) {
+    h2{
+        font-size: 1rem;
+        width: 400px;
+    }
+    article{
+        width: 350px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 680px){
+    article{
+        width: 500px;
+        height: 500px;
+        margin-left: 80px;
+     }
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 500px
+}
+}
+    
+@media screen and (min-width: 681px) and (max-width: 700px){
+    h2{
+        width: 550px;
+        font-size: 1.5rem;
+    }
+    .author{
+        font-size: 1.5rem;
+    }
+    article{
+        width: 500px;
+        height: 520px;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    h2{
+        width: 600px;
+        font-size: 1.7rem;
+    }
+    article{
+            width: 550px;
+            height: 500px;
+            margin-left: 18%;
+            }
+    }
+
+    @media screen and (min-width: 851px) and (max-width: 950px) {
+        h2{
+            font-size: 2rem;
+            margin-left: 25%;
+        }
+        h4{
+            font-size: 3rem;
+        }
+        article{
+            width: 650px;
+            height: 540px;
+            margin-left: 100px;
+        }
+        .text{
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (min-width: 951px) {
+        h2{
+            font-size: 2rem;
+            margin-left: 40%;
+        }
+        article{
+            width: 700px;
+            height: 600px;
+            margin-left: 140px;
+        }
+        .job{
+          font-size: 1.5rem;
+        }
+        .text{
+           font-size: 1.3rem;
+           width: 650px; 
+        }
+    }
+
+   @media screen and (min-width: 1000px) {
+       h2{
+          margin-left: 30%;
+       }
+       article{
+           width: 750px;
+           height: 680px ;
+         margin-left: 100px;
+       }
+       .text{
+           font-size: 1.5rem;
+           padding-left: 80px;
+       }
+       .btn-container{
+           margin-top: 45px;
+       }
+       .random-btn{
+           font-size: 1.3rem;
+       }
+       .prev-btn{
+           font-size: 1.3rem;
+       }
+       .next-btn{
+            font-size: 1.3rem;
+            }
+   } 
+
+   @media screen and (min-width: 1050px) {
+       article{
+           width: 900px;
+           margin-left: 90px;
+       }
+       .text{
+           width: 800px;
+        padding-left: 50px;
+       }
+   }
